@@ -1,10 +1,10 @@
 import React from 'react'
-import { Container } from '@/components/shared/container'
-import { Button } from '@/components/ui'
+import { Container } from '@/components/shared/Container'
 import { ArrowRight, ShoppingCart, User } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from '@/components/ui'
 
 interface Props {
   className?: string
