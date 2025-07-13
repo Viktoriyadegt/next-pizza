@@ -16,10 +16,11 @@ export default function Home() {
           <div className="flex-1">
             <div className={'flex flex-col gap-16'}>
               <ProductsGroupList
+                categoryId={1}
                 title={'Пиццы'}
                 items={[
                   {
-                    id: 1,
+                    id: 11,
                     name: 'Kokolapa',
                     imageUrl:
                       'https://cdn.inappstory.ru/story/xep/xzh/zmc/cr4gcw0aselwvf628pbmj3j/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAE&v=3101815496',
@@ -27,7 +28,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 12,
                     name: 'Kokolapa',
                     imageUrl:
                       'https://cdn.inappstory.ru/story/xep/xzh/zmc/cr4gcw0aselwvf628pbmj3j/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAE&v=3101815496',
@@ -35,7 +36,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 13,
                     name: 'Kokolapa',
                     imageUrl:
                       'https://cdn.inappstory.ru/story/xep/xzh/zmc/cr4gcw0aselwvf628pbmj3j/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAE&v=3101815496',
@@ -43,7 +44,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 14,
                     name: 'Kokolapa',
                     imageUrl:
                       'https://cdn.inappstory.ru/story/xep/xzh/zmc/cr4gcw0aselwvf628pbmj3j/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAE&v=3101815496',
@@ -51,7 +52,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 15,
                     name: 'Kokolapa',
                     imageUrl:
                       'https://cdn.inappstory.ru/story/xep/xzh/zmc/cr4gcw0aselwvf628pbmj3j/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAE&v=3101815496',
@@ -59,7 +60,7 @@ export default function Home() {
                     items: [{ price: 550 }],
                   },
                   {
-                    id: 1,
+                    id: 16,
                     name: 'Kokolapa',
                     imageUrl:
                       'https://cdn.inappstory.ru/story/xep/xzh/zmc/cr4gcw0aselwvf628pbmj3j/custom_cover/logo-350x440.webp?k=IgAAAAAAAAAE&v=3101815496',
@@ -68,7 +69,7 @@ export default function Home() {
                   },
                 ]}
               />
-              <ProductsGroupList title={'Завтраки'} items={[1, 2, 3, 4, 5]} />
+              <ProductsGroupList categoryId={2} title={'Комбо'} items={[1, 2, 3, 4, 5]} />
             </div>
           </div>
         </div>
