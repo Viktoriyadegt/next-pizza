@@ -10,10 +10,11 @@ datasource db {
 model User {
   id Int @id @default(autoincrement())
 
-  fullName String
-  email    String   @unique
-  password String
-  role     UserRole @default(USER)
+  fullName  String
+  email     String   @unique
+  password  String
+  role      UserRole @default(USER)
+  verified DateTime?
 
   cart             Cart?
   orders           Order[]
@@ -24,7 +25,6 @@ model User {
 
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
-  cartId   Int
 }
 
 model Category {
