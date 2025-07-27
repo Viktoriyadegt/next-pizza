@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui'
+import { SearchInput } from './SearchInput'
 
 interface Props {
   className?: string
@@ -23,6 +24,9 @@ export const Header: React.FC<Props> = ({ className }) => {
             </div>
           </div>
         </Link>
+        <div className="mx-10 flex-1">
+          <SearchInput />
+        </div>
         <div className="flex items-center gap-3">
           <Button variant={'outline'} className="flex items-center gap-1">
             <User size={16} />
