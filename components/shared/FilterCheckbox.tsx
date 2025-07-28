@@ -1,5 +1,5 @@
 import React from 'react'
-import { Checkbox } from '@/components/ui'
+import { Checkbox } from '@/shared/ui'
 
 export interface FilterCheckboxProps {
   text: string

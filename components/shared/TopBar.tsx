@@ -1,7 +1,7 @@
 import { Container } from '@/components/shared/Container'
 import { Categories } from '@/components/shared/Categories'
 import { SortPopup } from '@/components/shared/SortPopup'
-import { cn } from '@/lib/utils'
+import { cn } from '@/shared/lib/utils'
 
 interface Props {
   className?: string

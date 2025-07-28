@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container } from '@/components/shared/Container'
 import { ArrowRight, ShoppingCart, User } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { cn } from '@/shared/lib/utils'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Button } from '@/components/ui'
+import { Button } from '@/shared/ui'
 import { SearchInput } from './SearchInput'
 
 interface Props {

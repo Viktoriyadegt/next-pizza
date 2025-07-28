@@ -1,6 +1,6 @@
 'use client'
 
-import { Input } from '@/components/ui'
+import { Input } from '@/shared/ui'
 import { FilterCheckbox, type FilterCheckboxProps } from '@/components/shared/FilterCheckbox'
 import { type ChangeEvent, useState } from 'react'
 

@@ -1,7 +1,7 @@
 'use client'
 import { Title } from '@/components/shared/Title'
 import { ProductCard } from '@/components/shared/ProductCard'
-import { cn } from '@/lib/utils'
+import { cn } from '@/shared/lib/utils'
 import { useIntersection } from 'react-use'
 import { type RefObject, useEffect, useRef } from 'react'
 import { useCategoryStore } from '@/app/store/categories'
