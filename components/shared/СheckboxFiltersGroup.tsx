@@ -13,9 +13,10 @@ interface Props {
   limit?: number
   searchInputPlaceholder?: string
   className?: string
-  onChange?: (values: string[]) => void
+  onClickCheckbox?: (id: string) => void
   defaultValue?: string[]
   loading?: boolean
+  selectedIds: Set<string>
 }
 
 export const CheckboxFiltersGroup: React.FC<Props> = ({
@@ -26,6 +27,8 @@ export const CheckboxFiltersGroup: React.FC<Props> = ({
   searchInputPlaceholder = 'Поиск...',
   className,
   loading = false,
+  onClickCheckbox,
+  selectedIds,
 }) => {
   const [showAll, setShowAll] = useState(false)
   const [searchValue, setSearchValue] = useState('')
@@ -68,8 +71,8 @@ export const CheckboxFiltersGroup: React.FC<Props> = ({
         {list?.map((item, index) => (
           <FilterCheckbox
             key={index}
-            onCheckedChange={console.log}
-            checked={false}
+            onCheckedChange={() => onClickCheckbox?.(item.value)}
+            checked={selectedIds.has(item.value)}
             value={item.value}
             text={item.text}
             endAdornment={item.endAdornment}
