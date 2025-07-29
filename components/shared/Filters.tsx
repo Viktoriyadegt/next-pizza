@@ -11,7 +11,7 @@ interface Props {
 }
 
 export const Filters: React.FC<Props> = ({ className }) => {
-  const { ingredients } = useFilterIngredients()
+  const { ingredients, loading } = useFilterIngredients()
   const items = ingredients.map((item) => ({ value: String(item.id), text: item.name }))
 
   return (
@@ -32,7 +32,14 @@ export const Filters: React.FC<Props> = ({ className }) => {
         <RangeSlider min={0} max={5000} step={10} value={[0, 5000]} />
       </div>
 
-      <CheckboxFiltersGroup className="mt-5" title="Формат" limit={6} defaultItems={items.splice(0, 6)} items={items} />
+      <CheckboxFiltersGroup
+        className="mt-5"
+        title="Формат"
+        limit={6}
+        defaultItems={items.splice(0, 6)}
+        items={items}
+        loading={loading}
+      />
     </div>
   )
 }
